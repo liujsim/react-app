@@ -1,5 +1,5 @@
 import axios from 'axios'
-import nativeToast from 'native-toast'
+// import nativeToast from 'native-toast'
 
 axios.defaults.headers.post['Content-Type'] = 'application/json;charset=UTF-8'
 
@@ -39,38 +39,38 @@ axios.interceptors.response.use(response => {
   return response
 }, error => {
   if (error.response === undefined) {
-    nativeToast({
-      message: '服务器超时，请稍后再试',
-      position: 'top',
-      timeout: 10000,
-      type: 'warning'
-    })
+    // nativeToast({
+    //   message: '服务器超时，请稍后再试',
+    //   position: 'top',
+    //   timeout: 10000,
+    //   type: 'warning'
+    // })
   }
   if (error.response) {
     switch (error.response.status) {
       case 504:
-        nativeToast({
-          message: '服务器超时，请稍后再试',
-          position: 'top',
-          timeout: 10000,
-          type: 'warning'
-        })
+        // nativeToast({
+        //   message: '服务器超时，请稍后再试',
+        //   position: 'top',
+        //   timeout: 10000,
+        //   type: 'warning'
+        // })
         break
       case 502:
-        nativeToast({
-          message: 'Bad Gateway，请稍后再试',
-          position: 'top',
-          timeout: 10000,
-          type: 'warning'
-        })
+        // nativeToast({
+        //   message: 'Bad Gateway，请稍后再试',
+        //   position: 'top',
+        //   timeout: 10000,
+        //   type: 'warning'
+        // })
         break
       default:
-        nativeToast({
-          message: '服务器故障，请稍后再试',
-          position: 'top',
-          timeout: 10000,
-          type: 'warning'
-        })
+        // nativeToast({
+        //   message: '服务器故障，请稍后再试',
+        //   position: 'top',
+        //   timeout: 10000,
+        //   type: 'warning'
+        // })
     }
   }
   // 返回接口返回的错误信息

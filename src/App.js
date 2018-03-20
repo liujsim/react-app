@@ -1,7 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './App.css';
-import logo from './logo.svg';
+// import logo from './logo.svg';
+import Index from './pages/home/index.js';
 
 const BasicExample = () => (
   <Router>
@@ -23,26 +24,12 @@ const BasicExample = () => (
 
       <hr />
 
-      <Route exact path="/" component={Home} />
+      <Route exact path="/" component={Index} />
+      {/* <Route exact path="/" component={Home} /> */}
       <Route path="/about" component={About} />
       <Route path="/topics" component={Topics} />
     </div>
   </Router>
-);
-
-const Home = () => (
-  // <div>
-  //   <h2>Home</h2>
-  // </div>
-  <div className="App">
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <h1 className="App-title">Welcome to React</h1>
-    </header>
-    <p className="App-intro">
-      To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-  </div>
 );
 
 const About = () => (
