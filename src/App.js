@@ -16,6 +16,9 @@ const BasicExample = () => (
         <li>
           <Link to="/topics">Topics</Link>
         </li>
+        <li>
+          <Link to="/asyc">Asyc</Link>
+        </li>
       </ul>
 
       <hr />

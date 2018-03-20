@@ -177,15 +177,15 @@ module.exports = {
                     require('postcss-nested'),
                     require('postcss-cssnext'),
                     require('postcss-flexbugs-fixes'),
-                    autoprefixer({
-                      browsers: [
-                        '>1%',
-                        'last 4 versions',
-                        'Firefox ESR',
-                        'not ie < 9', // React doesn't support IE8 anyway
-                      ],
-                      flexbox: 'no-2009',
-                    }),
+                    // autoprefixer({
+                    //   browsers: [
+                    //     '>1%',
+                    //     'last 4 versions',
+                    //     'Firefox ESR',
+                    //     'not ie < 9', // React doesn't support IE8 anyway
+                    //   ],
+                    //   flexbox: 'no-2009',
+                    // }),
                     px2rem({ remUnit: 75 })
                   ],
                 },

@@ -79,3 +79,7 @@ npm install postcss-px2rem postcss-loader --S
       }
   },
 ```
+
+推荐使用 easy-mock
+
+### 添加 axios
