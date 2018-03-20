@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import Clock from '../../components/Clock'
 import Toggle from '../../components/Toggle'
 import Greeting from '../../components/Greeting'
+import LoginControl from '../../components/LoginControl'
 
 export default class Home extends Component {
   constructor(props) {
@@ -42,7 +43,24 @@ export default class Home extends Component {
         <Clock/>
         <Clock />
         <Greeting isLoggedIn={true}/>
+        <LoginControl />
+        <NumberList numbers={numbers} />
       </div>
     )
   }
 }
+
+const numbers = [1, 2, 3, 4, 5];
+
+// JSX允许在大括号中嵌入任何表达式
+function NumberList(props) {
+  const numbers = props.numbers;
+  const listItems = numbers.map((number, index) =>
+    <li key={number.toString()}>{number}</li>
+  );
+  return (
+    <ul>{listItems}</ul>
+  );
+}
+
+
