@@ -67,4 +67,15 @@ npm install postcss-px2rem postcss-loader --S
 },
 ```
 
-### 添加 axios
+### 添加 proxy
+
+在 package.json 添加
+
+```
+  "proxy": {
+    "/api": {
+      "target": "https://m.liujs.im/mock/5ab080107ddce80492a7ffec/api",
+      "ws": true
+      }
+  },
+```
