@@ -4,6 +4,7 @@ import Clock from '../../components/Clock'
 import Toggle from '../../components/Toggle'
 import Greeting from '../../components/Greeting'
 import LoginControl from '../../components/LoginControl'
+import NameForm from '../../components/NameForm'
 
 export default class Home extends Component {
   constructor(props) {
@@ -45,6 +46,7 @@ export default class Home extends Component {
         <Greeting isLoggedIn={true}/>
         <LoginControl />
         <NumberList numbers={numbers} />
+        <NameForm/>
       </div>
     )
   }
@@ -62,5 +64,3 @@ function NumberList(props) {
     <ul>{listItems}</ul>
   );
 }
-
-
