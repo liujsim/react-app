@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import Clock from '../../components/Clock'
+import Toggle from '../../components/Toggle'
+import Greeting from '../../components/Greeting'
 
 export default class Home extends Component {
   constructor(props) {
@@ -36,8 +38,10 @@ export default class Home extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+        <Toggle />
         <Clock/>
         <Clock />
+        <Greeting isLoggedIn={true}/>
       </div>
     )
   }

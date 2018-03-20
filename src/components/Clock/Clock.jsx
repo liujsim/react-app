@@ -12,7 +12,6 @@ export default class Clock extends Component {
     );
   }
 
-
   componentWillUnmount() {
     clearInterval(this.timerID);
   }
