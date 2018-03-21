@@ -8,7 +8,8 @@ export default class NameForm extends Component {
   }
 
   handleChange(event) {
-    this.setState({ value: event.target.value });
+    // this.setState({ value: event.target.value });
+    this.setState({ value: event.target.value.toUpperCase() }); // 变成大写字母
   }
 
   handleSubmit(event) {
@@ -16,6 +17,7 @@ export default class NameForm extends Component {
     event.preventDefault();
   }
 
+  // <input type="text">, <textarea>, 和 <select> 都十分类似 - 他们都通过传入一个value属性来实现对组件的控制。
   render() {
     return (
       <form onSubmit={this.handleSubmit}>

@@ -5,6 +5,7 @@ import Toggle from '../../components/Toggle'
 import Greeting from '../../components/Greeting'
 import LoginControl from '../../components/LoginControl'
 import NameForm from '../../components/NameForm'
+import EssayForm from '../../components/EssayForm'
 
 export default class Home extends Component {
   constructor(props) {
@@ -47,6 +48,7 @@ export default class Home extends Component {
         <LoginControl />
         <NumberList numbers={numbers} />
         <NameForm/>
+        <EssayForm/>
       </div>
     )
   }
