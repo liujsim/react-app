@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './App.css';
 // import logo from './logo.svg';
 import Index from './pages/home/index.js';
+import Counter from './components/Counter'
+import UserInfo from './components/UserInfo'
 
 const BasicExample = () => (
   <Router>
@@ -20,14 +22,20 @@ const BasicExample = () => (
         <li>
           <Link to="/asyc">Asyc</Link>
         </li>
+        <li>
+          <Link to="/counter">Counter</Link>
+        </li>
+        <li>
+          <Link to="/userInfo">UserInfo</Link>
+        </li>
       </ul>
-
       <hr />
-
       <Route exact path="/" component={Index} />
       {/* <Route exact path="/" component={Home} /> */}
       <Route path="/about" component={About} />
       <Route path="/topics" component={Topics} />
+      <Route path="/counter" component={Counter} />
+      <Route path="/userInfo" component={UserInfo} />
     </div>
   </Router>
 );

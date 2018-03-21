@@ -84,9 +84,21 @@ npm install postcss-px2rem postcss-loader --S
 
 ### 添加 axios
 
+npm install --save axios
+
+### 添加 redux
+
+```
+npm install --save redux
+npm install --save react-redux
+```
+
+添加 prop-types 进行类型检查
+
+```
+npm install --save prop-types
+```
 
 ### todo
-
-受控组件和非受控组件
 
 状态提升
